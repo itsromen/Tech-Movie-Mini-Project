@@ -216,7 +216,6 @@ movies and watchlist sections adds too much space in between and it doesnt look 
   /* this modifies the scrollbar (if its even present) to make it look better than the default one */
   scrollbar-width: thin;
   scrollbar-color: #00d4aa rgba(255, 255, 255, 0.1);
-  /* margin: 0 auto; */
 }
 
 /* use margin auto on the first and last child to center all the content cards */
