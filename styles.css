@@ -1,309 +1,309 @@
 /* Global Reset and Base Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: sans-serif;
-    background: #0f1419;
-    color: #ffffff;
-    line-height: 1.5;
+  font-family: sans-serif;
+  background: #0f1419;
+  color: #ffffff;
+  line-height: 1.5;
 }
 
 /* Header Navigation */
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(15, 20, 25, 0.99);
-    padding: 1rem 0;
-    z-index: 17;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 20, 25, 0.99);
+  padding: 1rem 0;
+  z-index: 17;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* used the before pseudo element to place the emoji before the text in the logo section
 this allows me to change the size of the emoji without having to modify the text as well */
 .logo::before {
-    content: "🖥️";
-    font-size: 1.8rem;
+  content: "🖥️";
+  font-size: 1.8rem;
 }
 
 .nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
 
 .nav-menu a {
-    color: #b8c5d1;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
+  color: #b8c5d1;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
 }
 
 .nav-menu a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    /* this part i did find on the internet as i wanted the background in 
+  height: 100vh;
+  /* this part i did find on the internet as i wanted the background in 
     the hero section to be a gradient alongside some image or design */
-    background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23162447"/><stop offset="50%" style="stop-color:%23243B67"/><stop offset="100%" style="stop-color:%230f1419"/></linearGradient></defs><rect fill="url(%23bg)" width="1200" height="600"/><circle cx="200" cy="150" r="100" fill="%2300d4aa" opacity="0.1"/><circle cx="800" cy="400" r="150" fill="%234facfe" opacity="0.1"/></svg>');
-    background-size: cover;
-    display: flex;
-    align-items: center;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23162447"/><stop offset="50%" style="stop-color:%23243B67"/><stop offset="100%" style="stop-color:%230f1419"/></linearGradient></defs><rect fill="url(%23bg)" width="1200" height="600"/><circle cx="200" cy="150" r="100" fill="%2300d4aa" opacity="0.1"/><circle cx="800" cy="400" r="150" fill="%234facfe" opacity="0.1"/></svg>');
+  background-size: cover;
+  display: flex;
+  align-items: center;
 }
 
 .hero-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    gap: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  gap: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .hero h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.1;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 .hero .subtitle {
-    font-size: 1.2rem;
-    color: #b8c5d1;
-    margin-bottom: 2rem;
-    line-height: 1.5;
+  font-size: 1.2rem;
+  color: #b8c5d1;
+  margin-bottom: 2rem;
+  line-height: 1.5;
 }
 
 .btn {
-    background: #00d4aa;
-    color: #000;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    text-decoration: none;
+  background: #00d4aa;
+  color: #000;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .btn:hover {
-    background: #00b894;
+  background: #00b894;
 }
 
 /* About Section */
 .about-section {
-    background: rgba(255,255,255,0.02);
-    border-top: 1px solid rgba(255,255,255,0.1);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .about-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .about-content {
-    text-align: center;
+  text-align: center;
 }
 
 .about-text {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about-text p {
-    font-size: 1rem;
-    color: #b8c5d1;
-    line-height: 1.7;
-    margin-bottom: 1.2rem;
+  font-size: 1rem;
+  color: #b8c5d1;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
 }
 
 .tech-interests {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .tech-interests h3 {
-    font-size: 1.3rem;
-    color: #fff;
-    margin-bottom: 1rem;
-    font-weight: 600;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .interest-tags {
-    display: flex;
-    /* unnecessary at the moment but added this incase i ever decide to add even more interests */
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    justify-content: center;
+  display: flex;
+  /* unnecessary at the moment but added this incase i ever decide to add even more interests */
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
 }
 
 .interest-tag {
-    background: rgba(0, 212, 170, 0.3);
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(0, 212, 170, 0.3);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Content Sections */
 section {
-    scroll-margin-top: 25px;
+  scroll-margin-top: 25px;
 }
 
 .content-section {
-    padding: 3rem 0rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* set the padding for the documentaries section to 0 because the padding from this section and the
 movies and watchlist sections adds too much space in between and it doesnt look as consistent */
 #documentaries {
-    padding: 0;
+  padding: 0;
 }
 
 .section-header {
-    margin-bottom: 2rem;
-    text-align: center;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .section-title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
 }
 
 .content-grid {
-    display: flex;
-    gap: 1.5rem;
-    /* this allows the content grid to allow users to scroll for certain screen sizes */
-    /* i prefer this approach in comparison to wrapping the movie articles */
-    overflow-x: auto;
-    padding: 0 2rem 1rem 2rem;
-    width: 99%;
-    /* this modifies the scrollbar (if its even present) to make it look better than the default one */
-    scrollbar-width: thin;
-    scrollbar-color: #00d4aa rgba(255,255,255,0.1);
-    /* margin: 0 auto; */
+  display: flex;
+  gap: 1.5rem;
+  /* this allows the content grid to allow users to scroll for certain screen sizes */
+  /* i prefer this approach in comparison to wrapping the movie articles */
+  overflow-x: auto;
+  padding: 0 2rem 1rem 2rem;
+  width: 99%;
+  /* this modifies the scrollbar (if its even present) to make it look better than the default one */
+  scrollbar-width: thin;
+  scrollbar-color: #00d4aa rgba(255, 255, 255, 0.1);
+  /* margin: 0 auto; */
 }
 
 /* use margin auto on the first and last child to center all the content cards */
 /* i tried to use justify content on the content grid however it led to issues when the scrollbar did appear */
 .content-card:first-child {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .content-card:last-child {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .content-card {
-    flex: 0 0 300px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.1);
+  flex: 0 0 300px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .content-card:hover {
-    background: rgba(255,255,255,0.08);
-    border-color: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .card-image {
-    height: 450px;
-    cursor: pointer;
+  height: 450px;
+  cursor: pointer;
 }
 
 /* add color on card cover to indicate it links to a trailer */
 .card-image:hover {
-    box-shadow: 0px 0px 5px rgba(0, 212, 170, 0.8);
+  box-shadow: 0px 0px 5px rgba(0, 212, 170, 0.8);
 }
 
 img {
-    height: 450px;
-    width: 300px;
+  height: 450px;
+  width: 300px;
 }
 
 .card-content {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .card-title {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .card-year {
-    font-size: 0.85rem;
-    color: #b8c5d1;
-    margin-bottom: 0.5rem;
-    /* display: inline; */
+  font-size: 0.85rem;
+  color: #b8c5d1;
+  margin-bottom: 0.5rem;
+  /* display: inline; */
 }
 
 .card-description {
-    font-size: 0.85rem;
-    color: #b8c5d1;
-    line-height: 1.4;
+  font-size: 0.85rem;
+  color: #b8c5d1;
+  line-height: 1.4;
 }
 
 .card-tags {
-    display: flex;
-    gap: 0.5rem;
-    margin-bottom: 0.8rem;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
 }
 
 .tag {
-    background: rgba(0, 212, 170, 0.2);
-    color: #00d4aa;
-    padding: 0.2rem 0.6rem;
-    border-radius: 12px;
-    font-size: 0.75rem;
-    font-weight: 500;
+  background: rgba(0, 212, 170, 0.2);
+  color: #00d4aa;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
 /* Footer */
 footer {
-    background: rgba(0,0,0,0.5);
-    padding: 2rem;
-    text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.1);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-content {
-    color: #b8c5d1;
+  color: #b8c5d1;
 }
